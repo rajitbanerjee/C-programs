@@ -1,7 +1,7 @@
 /*
 Author: Raj Banerjee (rajit.banerjee@ucdconnect.ie)
 ---
-Lab 5, Q 1 a, b - Factorial - (i) using for, (ii) using while, (ii) computing backwards
+Factorial - (i) using for, (ii) using while, (ii) computing backwards
 ---
 08.10.2018
 */
