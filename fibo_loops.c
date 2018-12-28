@@ -1,5 +1,5 @@
 /*
-Author: Raj Banerjee (rajit.banerjee@ucdconnect.ie)
+Author: Raj B (rajit.banerjee@ucdconnect.ie)
 ---
 Fibonacci sequence - using for & while loops
 ---
