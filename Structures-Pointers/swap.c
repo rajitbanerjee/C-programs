@@ -1,4 +1,13 @@
+/*
+Author: Raj B (rajit.banerjee@ucdconnect.ie)
+---
+Swap 2 numbers with pointers
+---
+19.12.18
+*/
+
 #include <stdio.h>
+
 void swap(int *x, int *y)
 {
     int t = *x;

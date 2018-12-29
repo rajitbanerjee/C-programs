@@ -1,15 +1,20 @@
 /*
-Author: Raj B
+Author: Raj B (rajit.banerjee@ucdconnect.ie)
+---
 Sum and product of array elements using pointers and structs
+---
 19.12.18
 */
+
 #include <stdio.h>
+
 typedef struct Array
 {
     int sum;
     int prod;
 } Array;
-Array getSumAndProduct(char a[], int len)
+
+Array getSumAndProduct(int a[], int len)
 {
     Array arr;
     arr.sum = 0;
@@ -21,7 +26,7 @@ Array getSumAndProduct(char a[], int len)
     }
     return arr;
 }
-void getSandP(char a[], int len, int *s, int *p)
+void getSandP(int a[], int len, int *s, int *p)
 {
     *s = 0;
     *p = 1;
@@ -34,17 +39,9 @@ void getSandP(char a[], int len, int *s, int *p)
 int main(void)
 {
     int s, p;
-    char a[] = {1,2,3,4,5};
-    // int a[] = {1,2,3,4,5}; int len = sizeof(a)/sizeof(a[0])
-    int len = sizeof(a);
-    /*
-    If you have an array, then you can find the number of elements in the array 
-    by dividing the size of the array in bytes by the size of each element in bytes:
-    char x[10];
-    int elements_in_x = sizeof(x) / sizeof(x[0]);
-    For the specific case of char, since sizeof(char) == 1, 
-    sizeof(x) will yield the same result.
-    */
+    int a[] = {1,2,3,4,5};
+    int len = sizeof(a)/sizeof(a[0]);
+  
     Array arr = getSumAndProduct(a, len);
     getSandP(a, len, &s, &p);
     printf("Sum = %d, Product = %d\n", arr.sum, arr.prod);

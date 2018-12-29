@@ -1,8 +1,11 @@
 /*
-Author: Raj B
-Exam 2015 Q5 using pointers
+Author: Raj B (rajit.banerjee@ucdconnect.ie)
+---
+secs to h:m:s using pointers
+---
 19.12.18
 */
+
 #include <stdio.h>
 void convert_secs(int totalsecs, int *h, int *m, int *s)
 {

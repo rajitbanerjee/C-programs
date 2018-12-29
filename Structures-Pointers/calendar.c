@@ -1,7 +1,9 @@
 /*
-Author: Raj B
+Author: Raj B (rajit.banerjee@ucdconnect.ie)
+---
 Program to convert totaldays to month and day in month
 Using structs and pointers
+---
 19.12.18
 */
 #include <stdio.h>

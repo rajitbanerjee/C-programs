@@ -1,8 +1,11 @@
 /*
 Author: Raj B
-Exam 2015 Q5 using struct
+---
+Secs to h:m:s
+---
 19.12.18
 */
+
 #include <stdio.h>
 typedef struct Time
 {
