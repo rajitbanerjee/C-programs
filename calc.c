@@ -1,6 +1,8 @@
 /*
 Author: Raj Banerjee (rajit.banerjee@ucdconnect.ie)
+---
 Simple Calculator
+---
 02.10.2018
 */
 
@@ -33,7 +35,7 @@ int main(void)
     if (b == 0) //checking division by 0
       printf("Error. Division by zero.");
     else
-      printf("\n %d / %d = %3.5f\n", a, b, ((double)a/(double)b)); 
+      printf("\n %d / %d = %3.5f\n", a, b, ((double)a/(double)b));
       //type casting to double to avoid removal of remainder
   }
 
