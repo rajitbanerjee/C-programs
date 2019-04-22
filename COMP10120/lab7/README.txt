@@ -1,0 +1,2 @@
+Compiler used:
+MinGW (gcc)
