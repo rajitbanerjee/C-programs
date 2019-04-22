@@ -103,7 +103,7 @@ int main(void)
     //display maximum acceleration value for chosen driver
     printf("\nMax. average acceleration for Driver %d: %d", driver, max_acc);
 
-    //display avergae acceleration for all of chosen driver's trips
+    //display average acceleration for all of chosen driver's trips
     printf("\nAverage acceleration over all of Driver %d trips: %.2f", driver, driver_sum/10);
 
     //display if discount is applied or not
