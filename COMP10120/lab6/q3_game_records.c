@@ -297,7 +297,6 @@ void printRecords()
         //initialise game variable of type gameData
         gameData game = {0, "", "", "", 0, "", "", ""};
 
-        printf("\n************************************************************");
         printf("\n~ VIDEO GAME RECORDS ~");
         printf("\nGAME NO.\tTITLE\t\tPLATFORM\tDEVELOPER\tYEAR\tBORROWER NAME\tBORROW DATE\n");
 
