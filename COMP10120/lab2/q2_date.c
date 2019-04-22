@@ -19,7 +19,6 @@ int dayOfWeek (int q, int m, int K, int J);
 //returns month number
 int monthNum (char month[10]);
 
-
 //main() function
 int main(void)
 {
@@ -54,12 +53,11 @@ int main(void)
         return 0;
     }
     
-
     //find weekday number by calling function dayOfWeek
-    int weekday = dayOfWeek(day, mon_num, year%100, year/100);
+    int weekday = dayOfWeek(day, mon_num, year % 100, year/100);
 
     //array to store names of days
-    char days[7][10] = {"Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+    char *days[7] = {"Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
     
     printf("%32s", "Day of the week: ");
     for (int i = 0; i < 7; i++)
@@ -71,10 +69,8 @@ int main(void)
             break;
         }
     }
-    
     return 0;
 }
-
 
 /*
  * Zeller's congruence
@@ -96,28 +92,22 @@ int dayOfWeek (int q, int m, int K, int J)
     return (q + (13 * (m + 1))/5 +  K + K/4 + J/4 + 5 * J) % 7;
 }
 
-
 //parameter: month name
 //returns month number, e.g. March = 3
 int monthNum (char month[10])
 {
     //array to store month names
-    char month_names[12][10] = {"January", "February", "March", "April", "May", 
+    char *month_names[12] = {"January", "February", "March", "April", "May", 
     "June", "July", "August", "September", "October", "November", "December"};
     
     //comparing month entered with all the month names
-    //if a match is found, then month number is returned
-    for (int i = 0; i<12; i++)
+    for (int i = 0; i < 12; i++) 
+    {
+        //if a match is found, then month number is returned
         if (strcmp(month, month_names[i]) == 0)
-            return i+1;
+            return i + 1;
+    }
 
     //return -1 if input month is invalid  
     return -1;
 }
-
-
-
-    
-
-
-
