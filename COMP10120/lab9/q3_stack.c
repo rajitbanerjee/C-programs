@@ -43,7 +43,7 @@ int main(void)
                 printf("Enter a character: ");
                 scanf("\n%c", &item);
                 push(&top, item); //add item to stack 
-                printf("Item succesfully pushed to stack: %c\n", item);
+                printf("Item successfully pushed to stack: %c\n", item);
                 printStack(top); //print stack after successful push 
                 break; //end of case 1
 
